@@ -61,7 +61,7 @@ const DATA = {
     },
     {
       title: "Telco Customer Churn Prediction",
-      color: "orange",
+      color: "green",
       description: "Compared 6 models on 7,043 customers. Best result: 0.844 ROC-AUC with 77% recall on likely churners.",
       tags: ["XGBoost", "SMOTE", "Classification"],
       repo: "https://github.com/sakibzzz641/Telco-Customer-Churn-Prediction",   // TODO: churn repo link
@@ -71,7 +71,7 @@ const DATA = {
     },
     {
       title: "Medical Insurance Cost Prediction",
-      color: "blue",
+      color: "green",
       description: "Regression pipeline on 1,337 records. R\u00B2 of 0.85, with SHAP showing smoking status and age drive cost.",
       tags: ["Regression", "SHAP", "Cross-Validation"],
       repo: "https://github.com/sakibzzz641/Insurance-charges-regression",   // TODO: insurance repo link
@@ -93,7 +93,7 @@ const DATA = {
     },
     {
       title: "Telecom Churn Retention",
-      color: "orange",
+      color: "green",
       tags: ["Classification", "XGBoost", "SMOTE"],
       problem: "Predict which customers are about to leave so the company can act early.",
       approach: "EDA, SMOTE for class imbalance, and 6 models compared with ROC-AUC and recall.",
@@ -101,7 +101,7 @@ const DATA = {
     },
     {
       title: "Insurance Cost Drivers",
-      color: "blue",
+      color: "green",
       tags: ["Regression", "XGBoost", "SHAP"],
       problem: "Estimate medical charges and explain what pushes them up.",
       approach: "Smoker \u00D7 BMI features cut baseline RMSE by 25%. 8 models tested with 5-fold CV and tuning.",
