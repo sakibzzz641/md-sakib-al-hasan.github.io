@@ -1,0 +1,139 @@
+/* ==========================================================
+   PORTFOLIO DATA: shudhu ei file edit korlei hobe.
+   - Link/image khali ("") rakhle oi button ba image nijei lukiye jabe.
+   - Notun item add korte { ... }, line ta copy kore comma diye boshao.
+   - Image/file gulo assets/ folder e rakho.
+   ========================================================== */
+const DATA = {
+
+  // ---------- Profile ----------
+  profile: {
+    name: "Md. Sakib Al Hasan",
+    shortName: "Sakib Al Hasan",          // nav bar e dekhabe
+    initials: "SH",                        // photo na thakle eta dekhabe
+    tagline: "I turn raw data into useful predictions and clear decisions. Explore my projects and case studies to see how I solve real-world problems with Python and machine learning.",
+    photo: "assets/img/photo.jpg",         // photo upload korle auto boshbe
+    cv: "assets/cv/Sakib_Al_Hasan_Data_Science.pdf"
+  },
+
+  // ---------- Social (khali "" = icon dekhabe na) ----------
+  social: {
+    github: "https://github.com/sakibzzz641",
+    linkedin: "https://linkedin.com/in/sakibzzz641",
+    email: "sakibzzz641@gmail.com",
+    kaggle: ""
+  },
+
+  // ---------- Hero tags ----------
+  heroTags: {
+    top: ["Data Science", "Machine Learning", "Python", "SQL", "Pandas", "NumPy", "Statistical Analysis"],
+    bottom: ["Junior Data Scientist", "Scikit-learn", "XGBoost", "EDA", "Feature Engineering", "Data Visualization"]
+  },
+
+  // ---------- Skills ----------
+  skills: [
+    { icon: "Py", title: "Programming", items: ["Python", "SQL"] },
+    { icon: "Pd", title: "Python Libraries", items: ["Pandas", "NumPy", "Scikit-learn", "XGBoost"] },
+    { icon: "ML", title: "Machine Learning", subgroups: [
+      { title: "Supervised Learning", items: ["Regression", "Classification"] },
+      { title: "Unsupervised Learning", items: ["Clustering", "PCA"] },
+      { title: "Model Building", items: ["Feature Engineering", "Cross-Validation", "Hyperparameter Tuning", "Model Evaluation"] }
+    ] },
+    { icon: "DA", title: "Data Analysis", items: ["Data Cleaning", "EDA", "Statistical Analysis"] },
+    { icon: "Vz", title: "Data Visualization", items: ["Matplotlib", "Seaborn"] },
+    { icon: "Tl", title: "Tools", items: ["Jupyter Notebook", "Git", "GitHub", "AI-assisted development tools", "MS Excel", "MS Word", "MS PowerPoint", "MS Access"] }
+  ],
+
+  // ---------- Featured Projects ----------
+  // image: "assets/img/projects/xxx.png" dile screenshot dekhabe, khali thakle chhoto chart dekhabe
+  // thumb (image na thakle): "dots" | "mix" | "up"
+  projects: [
+    {
+      title: "Customer Segmentation",
+      description: "Segmented 8,950 credit card customers with K-Means, Hierarchical and DBSCAN clustering after PCA (95% variance).",
+      tags: ["Python", "PCA", "Clustering"],
+      repo: "https://github.com/sakibzzz641/Customer-Segmentation-Kmeans-dbscan-clustering",
+      demo: "",
+      image: "",
+      thumb: "dots"
+    },
+    {
+      title: "Telco Customer Churn Prediction",
+      description: "Compared 6 models on 7,043 customers. Best result: 0.844 ROC-AUC with 77% recall on likely churners.",
+      tags: ["XGBoost", "SMOTE", "Classification"],
+      repo: "",   // TODO: churn repo link
+      demo: "",
+      image: "",
+      thumb: "mix"
+    },
+    {
+      title: "Medical Insurance Cost Prediction",
+      description: "Regression pipeline on 1,337 records. R\u00B2 of 0.85, with SHAP showing smoking status and age drive cost.",
+      tags: ["Regression", "SHAP", "Cross-Validation"],
+      repo: "",   // TODO: insurance repo link
+      demo: "",
+      image: "",
+      thumb: "up"
+    }
+  ],
+
+  // ---------- Case Studies ----------
+  cases: [
+    {
+      title: "Credit Card Customer Segmentation",
+      tags: ["Clustering", "PCA", "K-Means"],
+      problem: "Group customers by spending and repayment behavior to guide marketing and credit risk.",
+      approach: "Log-transforms, correlation filtering, PCA (9 components), then K-Means, Hierarchical and DBSCAN compared by silhouette score.",
+      result: "K-Means (k=2) found 60% purchase-active customers and 40% cash-advance, high-balance carriers."
+    },
+    {
+      title: "Telecom Churn Retention",
+      tags: ["Classification", "XGBoost", "SMOTE"],
+      problem: "Predict which customers are about to leave so the company can act early.",
+      approach: "EDA, SMOTE for class imbalance, and 6 models compared with ROC-AUC and recall.",
+      result: "88.6% of churners are on month-to-month contracts. Suggested auto-pay incentives and 1-year offers."
+    },
+    {
+      title: "Insurance Cost Drivers",
+      tags: ["Regression", "XGBoost", "SHAP"],
+      problem: "Estimate medical charges and explain what pushes them up.",
+      approach: "Smoker \u00D7 BMI features cut baseline RMSE by 25%. 8 models tested with 5-fold CV and tuning.",
+      result: "XGBoost reached R\u00B2 0.85 (RMSE about $4.6K). Smokers pay about 3.8x more on average."
+    }
+  ],
+
+  // ---------- Certifications ----------
+  // link: certificate URL, ba "assets/cert/xxx.pdf". Khali thakle button lukiye thakbe.
+  certificates: [
+    {
+      title: "Data Science & Machine Learning with Python",
+      issuer: "Ostad",
+      details: [["Year", "2026"], ["Covers", "Python, data analysis, machine learning"]],
+      link: ""   // TODO: Ostad certificate link
+    },
+    {
+      title: "Computer Basic and ICT Applications",
+      issuer: "Dept. of Youth Development, Ministry of Youth and Sports, Govt. of Bangladesh",
+      details: [["Period", "Jul\u2013Dec 2024"], ["Grade", "A+"], ["Certificate ID", "141231"], ["Covers", "MS Word, Excel, Access, PowerPoint"]],
+      link: ""   // TODO: ICT certificate link
+    }
+  ],
+
+  // ---------- About ----------
+  about: {
+    subtitle: "Junior Data Scientist from Narsingdi, Bangladesh.",
+    paragraphs: [
+      "I am a Mathematics (Hons) student who builds end-to-end data projects in Python: data cleaning, EDA, feature engineering, modeling and evaluation.",
+      "I am looking for an entry-level Data Scientist or Data Analyst role where I can keep learning and turn data into decisions."
+    ],
+    education: [
+      { title: "B.Sc. (Hons) in Mathematics", note: "Govt. Shaheed Asad College, Shibpur, Narsingdi. 4th year, expected 2027." },
+      { title: "HSC (Science), GPA 4.42/5.00", note: "Narsingdi Public College, 2021." }
+    ]
+  },
+
+  // ---------- Contact ----------
+  contact: {
+    text: "Open to entry-level Data Scientist and Data Analyst roles."
+  }
+};
