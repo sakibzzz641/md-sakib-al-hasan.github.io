@@ -12,7 +12,7 @@ const DATA = {
     shortName: "Sakib Al Hasan",          // nav bar e dekhabe
     initials: "SH",                        // photo na thakle eta dekhabe
     tagline: "I turn raw data into useful predictions and clear decisions. Explore my projects and case studies to see how I solve real-world problems with Python and machine learning.",
-    photo: "assets/img/photo.jpg",         // photo upload korle auto boshbe
+    photo: "assets/img/photo.png",         // photo upload korle auto boshbe
     cv: "assets/cv/Sakib_Al_Hasan_Data_Science.pdf"
   },
 
