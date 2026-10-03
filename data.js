@@ -61,7 +61,7 @@ const DATA = {
       title: "Telco Customer Churn Prediction",
       description: "Compared 6 models on 7,043 customers. Best result: 0.844 ROC-AUC with 77% recall on likely churners.",
       tags: ["XGBoost", "SMOTE", "Classification"],
-      repo: "",   // TODO: churn repo link
+      repo: "https://github.com/sakibzzz641/Telco-Customer-Churn-Prediction",   // TODO: churn repo link
       demo: "",
       image: "",
       thumb: "mix"
@@ -70,7 +70,7 @@ const DATA = {
       title: "Medical Insurance Cost Prediction",
       description: "Regression pipeline on 1,337 records. R\u00B2 of 0.85, with SHAP showing smoking status and age drive cost.",
       tags: ["Regression", "SHAP", "Cross-Validation"],
-      repo: "",   // TODO: insurance repo link
+      repo: "https://github.com/sakibzzz641/Insurance-charges-regression",   // TODO: insurance repo link
       demo: "",
       image: "",
       thumb: "up"
