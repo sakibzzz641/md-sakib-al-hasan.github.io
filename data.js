@@ -115,7 +115,7 @@ const DATA = {
     {
       title: "Data Science & Machine Learning with Python",
       issuer: "Ostad",
-      details: [["Year", "2026"], ["Covers", "Python, data analysis, machine learning"]],
+      details: [["Year", "2026"], ["Covers", "Python, Data Analysis, Scikit-learn , XGBoost, EDA, Feature Engineering, Data Visualization , Machine Learning"]],
       link: "https://ostad.app/share/certificate/c47905-md.-sakib-al-hasan"   // TODO: Ostad certificate link
     },
     {
